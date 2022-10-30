@@ -13,6 +13,7 @@
   --secondary-color: #36a18b;
   --secondary-color-light: #e8f2ee;
   --tertiary-color: #eee;
+  --content-container-width: 600px;
 }
 
 section, footer {
@@ -29,18 +30,26 @@ a {
   text-decoration: none;
 }
 
+.content-container {
+  margin: 0 auto;
+  max-width: var(--content-container-width);
+}
+
 .section-title {
   margin-bottom: 1.3rem;
 }
 
 /* Personal info section */
-#personal-info {  
+#personal-info {
+  background-color: var(--primary-color);  
+  color: white;
+}
+
+#personal-info .content-container {  
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.3rem;
-  color: white;
-  background-color: var(--primary-color);  
 }
 
 #personal-info img {
@@ -86,6 +95,10 @@ a {
 }
 
 /* Bio & Experience section */
+#bio ul {
+  max-width: 450px;
+}
+
 .bio-timeline li {
   display: flex;
   margin-bottom: 0.5rem;
@@ -102,8 +115,12 @@ a {
 }
 
 /* Skills section */
+.card-skills-container {
+  display: flex;
+  gap: 1rem;
+}
+
 .card-skills {
-  margin-bottom: 1rem;
   padding: 2rem;
   background-color: var(--tertiary-color);
   display: flex;
@@ -118,6 +135,7 @@ a {
 }
 
 .card-skills h3 {
+  text-align: center;
   margin-bottom: 0.4rem;
 }
 
@@ -128,4 +146,12 @@ a {
 /* Footer */
 footer {
   background-color: var(--secondary-color-light);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 720px) {
+  .card-skills-container {
+    flex-direction: column;
+  }  
 }
