@@ -100,6 +100,30 @@ a {
   background-color: var(--secondary-color-light);
 }
 
+/* Skills section */
+.card-skills {
+  margin-bottom: 1rem;
+  padding: 2rem;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-skills i {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+}
+
+.card-skills h3 {
+  margin-bottom: 0.4rem;
+}
+
+.card-skills p {
+  text-align: center;
+}
+
 /* Footer */
 footer {
   background-color: var(--secondary-color-light);
