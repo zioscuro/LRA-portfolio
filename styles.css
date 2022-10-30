@@ -14,7 +14,7 @@
   --secondary-color-light: #e8f2ee;
 }
 
-section {
+section, footer {
   padding: 3rem;
 }
 
@@ -97,5 +97,10 @@ a {
 
 /* Hobbies section */
 #hobbies {
+  background-color: var(--secondary-color-light);
+}
+
+/* Footer */
+footer {
   background-color: var(--secondary-color-light);
 }
