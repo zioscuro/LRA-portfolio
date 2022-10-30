@@ -24,7 +24,12 @@ li {
 
 a {
   color: var(--secondary-color);
+  font-weight: 700;
   text-decoration: none;
+}
+
+.section-title {
+  margin-bottom: 1.3rem;
 }
 
 /* Personal info section */
@@ -80,11 +85,6 @@ a {
 }
 
 /* Bio & Experience section */
-
-.section-title {
-  margin-bottom: 1.3rem;
-}
-
 .bio-timeline li {
   display: flex;
   margin-bottom: 0.5rem;
@@ -93,4 +93,9 @@ a {
 .bio-timeline .bio-year {
   margin-right: 1rem;
   font-weight: 700;
+}
+
+/* Hobbies section */
+#hobbies {
+  background-color: var(--secondary-color-light);
 }
