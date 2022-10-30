@@ -12,6 +12,7 @@
   --primary-color-light: #c0d2d7;
   --secondary-color: #36a18b;
   --secondary-color-light: #e8f2ee;
+  --tertiary-color: #eee;
 }
 
 section, footer {
@@ -104,7 +105,7 @@ a {
 .card-skills {
   margin-bottom: 1rem;
   padding: 2rem;
-  background-color: #eee;
+  background-color: var(--tertiary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
