@@ -1,3 +1,63 @@
-h1 {
-  color: red;
+/* General Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  --primary-color: #2b697a;
+  --primary-color-light: #c0d2d7;
+  --secondary-color: #36a18b;
+  --secondary-color-light: #36a18b;
+}
+
+
+/* Personal info section */
+#personal-info {  
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  color: white;
+  background-color: var(--primary-color);  
+}
+
+#personal-info img {
+  width: 160px;
+  border-radius: 100%;
+}
+
+#personal-info h1 {
+  font-size: 2rem;
+}
+
+#personal-info p {
+  max-width: 300px;
+}
+
+#personal-info ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#personal-info li {
+  margin-right: 0.4rem;
+  margin-bottom: 0.8rem;
+  list-style-type: none;
+}
+
+#personal-info li a, #personal-info a {
+  padding: 0.2rem 0.5rem;
+  color: var(--primary-color);
+  background-color: var(--primary-color-light);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#personal-info a:hover {
+  opacity: 0.8;
 }
