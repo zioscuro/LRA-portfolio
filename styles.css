@@ -13,7 +13,8 @@
   --secondary-color: #36a18b;
   --secondary-color-light: #e8f2ee;
   --tertiary-color: #eee;
-  --content-container-width: 600px;
+  --hero-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --content-container-width: 650px;
 }
 
 section,
@@ -57,6 +58,7 @@ a {
   margin-top: 3rem;
   width: 160px;
   border-radius: 100%;
+  box-shadow: var(--hero-shadow);
 }
 
 #personal-info h1 {
@@ -65,6 +67,10 @@ a {
 
 #personal-info p {
   max-width: 300px;
+}
+
+#personal-info h1, #personal-info p {
+  text-shadow: var(--hero-shadow);  
 }
 
 #personal-info ul {
