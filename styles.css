@@ -12,7 +12,8 @@
   --primary-color-light: #c0d2d7;
   --secondary-color: #36a18b;
   --secondary-color-light: #e8f2ee;
-  --tertiary-color: #eee;
+  --tertiary1-color: #eee;
+  --tertiary2-color: #ebddcc;
   --hero-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   --content-container-width: 650px;
 }
@@ -121,33 +122,33 @@ a {
   background-color: var(--secondary-color-light);
 }
 
-/* Skills section */
-.card-skills-container {
+/* Work section */
+.card-work-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
-.card-skills {
+.card-work {
   padding: 2rem;
-  background-color: var(--tertiary-color);
+  background-color: var(--tertiary1-color);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card-skills i {
+.card-work i {
   margin-bottom: 1rem;
   color: var(--secondary-color);
   font-size: 2.5rem;
 }
 
-.card-skills h3 {
+.card-work h3 {
   text-align: center;
   margin-bottom: 0.4rem;
 }
 
-.card-skills p {
+.card-work p {
   text-align: center;
 }
 
@@ -158,7 +159,7 @@ footer {
 
 /* Media queries */
 @media screen and (max-width: 720px) {
-  .card-skills-container {
+  .card-work-container {
     grid-template-columns: 1fr;
   }
 }

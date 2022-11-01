@@ -7,7 +7,6 @@ const effect = VANTA.WAVES({
   zoom: 0.75
 })
 
-
 setTimeout(() => {
   effect.resize()
 }, 100)
