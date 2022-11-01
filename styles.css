@@ -151,7 +151,6 @@ footer {
 }
 
 /* Media queries */
-
 @media screen and (max-width: 720px) {
   .card-skills-container {
     grid-template-columns: 1fr;
