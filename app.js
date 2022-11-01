@@ -1,4 +1,4 @@
-VANTA.WAVES({
+const effect = VANTA.WAVES({
   el: '#personal-info', 
   color: 0x193d47,
   waveHeight: 10,
@@ -7,5 +7,7 @@ VANTA.WAVES({
   zoom: 0.75
 })
 
-window.dispatchEvent(new Event('resize'));
-effect.resize()
+
+setTimeout(() => {
+  effect.resize()
+}, 100)
