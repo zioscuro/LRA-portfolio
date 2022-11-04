@@ -152,8 +152,14 @@ a {
 }
 
 /* Tools section */
+.tools-container {
+  margin-bottom: 1rem;
+  padding: 0.2rem 2rem;
+  background-color: var(--tertiary-color);
+}
+
 .tools-container h4 {
-  margin: 1rem 0 0.4rem;
+  margin: 1rem 0;
 }
 
 .tools-container ul {
@@ -164,6 +170,16 @@ a {
 
 .tools-container li {
   margin-right: 1rem;
+  margin-bottom: 1rem;
+  position: relative;  
+}
+
+.tools-container img {
+  height: 50px;
+}
+
+.tools-container .tool-description {
+  display: none;
 }
 
 /* Footer */
