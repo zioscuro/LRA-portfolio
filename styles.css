@@ -15,6 +15,7 @@
   --tertiary-color: #f2f2f2;
   --hero-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   --content-container-width: 650px;
+  --nav-width: 800px;
 }
 
 section,
@@ -40,6 +41,37 @@ a {
 .section-title {
   margin-bottom: 1.3rem;
 }
+
+/* Header */
+header  {
+  position: fixed;
+  z-index: 1;
+  padding: 0.5rem 0;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0));
+  height: 4rem;
+  width: 100%;
+}
+
+header nav {
+  margin: 0 auto;
+  max-width: var(--nav-width);
+  display: flex;
+}
+
+header img {
+  height: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+header nav a{
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  color: white;  
+}
+
+
+
 
 /* Personal info section */
 #personal-info {
@@ -154,7 +186,7 @@ a {
 /* Tools section */
 .tools-container {
   margin-bottom: 1rem;
-  padding: 0.2rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: var(--tertiary-color);
 }
 
@@ -180,6 +212,20 @@ a {
 
 .tools-container .tool-description {
   display: none;
+}
+
+/* Projects section */
+.projects-container {
+  padding: 2rem;
+  background-color: var(--tertiary-color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.project-card {
+  height: 10rem;
+  border: 1px solid red;
 }
 
 /* Footer */

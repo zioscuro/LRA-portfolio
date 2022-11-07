@@ -1,3 +1,4 @@
+// Hero section background effect
 const effect = VANTA.WAVES({
   el: '#personal-info', 
   color: 0x193d47,
