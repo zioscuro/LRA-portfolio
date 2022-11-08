@@ -42,6 +42,10 @@ a {
   margin-bottom: 1.3rem;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 /* Header */
 header  {
   position: fixed;
@@ -61,6 +65,7 @@ header nav {
 }
 
 header nav .nav-right {
+  position: relative;
   display: flex;
   justify-content: flex-end;
 }
@@ -92,6 +97,10 @@ header nav a{
   display: flex;
   align-items: center;
   color: white;  
+}
+
+header #hamburger-menu {
+  display: none;
 }
 
 /* Personal info section */
@@ -264,9 +273,31 @@ footer {
     display: none;
   }
 
+  header #hamburger-menu {
+    padding: 0.5rem 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 2.5rem;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 0.5rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;   
+  }
+
+  header #hamburger-menu a {
+    margin: 0;
+    padding: 0.5rem;
+    font-weight: 400;    
+  }
+
+  header #hamburger-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0.3rem;
+    text-decoration: underline;
+  }
+
   .card-work-container {
     grid-template-columns: 1fr;
   }
-
-
 }

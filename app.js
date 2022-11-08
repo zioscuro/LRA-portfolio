@@ -11,3 +11,11 @@ const effect = VANTA.WAVES({
 setTimeout(() => {
   effect.resize()
 }, 100)
+
+// hamburger menu
+const menuBtn = document.querySelector('#hamburger-button')
+const hamburgerMenu = document.querySelector('#hamburger-menu')
+
+menuBtn.addEventListener('click', () => {
+  hamburgerMenu.classList.toggle('hidden')
+})
