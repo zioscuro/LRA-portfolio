@@ -46,7 +46,7 @@ a {
   visibility: hidden;
 }
 
-/* Header */
+/* Header & nav*/
 header  {
   position: fixed;
   z-index: 2;
@@ -56,7 +56,7 @@ header  {
   width: 100%;
 }
 
-header nav {
+nav {
   margin: 0 auto;
   padding: 0 2rem;
   max-width: var(--nav-width);
@@ -64,42 +64,33 @@ header nav {
   justify-content: space-between;
 }
 
-header nav .nav-right {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-}
-
-header nav .menu-link {
-  font-weight: 400;
-}
-
-header img {
-  height: 2.5rem;
-  margin-right: 0.5rem;
-}
-
-header i {
-  margin-right: 0.5rem;
-}
-
-header button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  display: none;
-  cursor: pointer;
-}
-
-header nav a{
+nav a{
   margin-right: 2rem;
   display: flex;
   align-items: center;
   color: white;  
 }
 
-header #hamburger-menu {
+nav .nav-right {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .menu-link {
+  font-weight: 400;
+}
+
+nav img {
+  height: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+nav i {
+  margin-right: 0.5rem;
+}
+
+nav button, #hamburger-menu {
   display: none;
 }
 
@@ -265,15 +256,20 @@ footer {
 
 /* Media queries */
 @media screen and (max-width: 720px) {
-  header button {
+  nav button {
     display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
 
-  header .menu-link {
+  nav .menu-link {
     display: none;
   }
 
-  header #hamburger-menu {
+  #hamburger-menu {
     padding: 0.5rem 1.5rem;
     position: absolute;
     right: 0;
@@ -285,13 +281,13 @@ footer {
     align-items: flex-end;   
   }
 
-  header #hamburger-menu a {
+  #hamburger-menu a {
     margin: 0;
     padding: 0.5rem;
     font-weight: 400;    
   }
 
-  header #hamburger-menu a:hover {
+  #hamburger-menu a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 0.3rem;
     text-decoration: underline;
