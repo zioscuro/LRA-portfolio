@@ -231,10 +231,6 @@ nav button, #hamburger-menu {
   height: 50px;
 }
 
-.tools-container .tool-description {
-  display: none;
-}
-
 /* Projects section */
 .projects-container {
   padding: 2rem;
