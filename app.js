@@ -28,3 +28,31 @@ navLinks.forEach((link) => {
 menuBtn.addEventListener('click', () => {
   hamburgerMenu.classList.toggle('hidden');
 });
+
+// set theme
+const themeSwitch = document.querySelector('#theme-switch');
+const root = document.documentElement;
+
+function setTheme() {
+  const newTheme = root.className === 'dark' ? 'light' : 'dark';
+  root.className = newTheme;
+
+  if (newTheme === 'dark') {
+    console.log('dark')
+    themeSwitch.innerHTML = '<i class="fa-solid fa-moon"></i>'
+
+    effect.setOptions({
+      color: 0x282a2f
+    });
+  } else {
+    console.log('light')
+    themeSwitch.innerHTML = '<i class="fa-solid fa-sun"></i>'
+
+    effect.setOptions({
+      color: 0x193d47
+    });
+  }
+
+};
+
+themeSwitch.addEventListener('click', setTheme)
