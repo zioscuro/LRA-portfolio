@@ -51,5 +51,4 @@ function setTheme() {
       color: 0x193d47
     });
   }
-
 };
