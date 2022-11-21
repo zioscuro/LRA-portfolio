@@ -132,9 +132,7 @@ nav .menu-link:hover, nav button:hover {
   display: none;
 }
 
-
 #theme-switch i {
-  /* color: var(--text-secondary-color); */
   font-size: 1.5rem;
 }
 
