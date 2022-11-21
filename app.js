@@ -31,21 +31,20 @@ menuBtn.addEventListener('click', () => {
 
 // set theme
 const themeSwitch = document.querySelector('#theme-switch');
-const root = document.documentElement;
+themeSwitch.addEventListener('click', setTheme)
 
 function setTheme() {
+  const root = document.documentElement;
   const newTheme = root.className === 'dark' ? 'light' : 'dark';
   root.className = newTheme;
 
   if (newTheme === 'dark') {
-    console.log('dark')
     themeSwitch.innerHTML = '<i class="fa-solid fa-moon"></i>'
 
     effect.setOptions({
       color: 0x282a2f
     });
   } else {
-    console.log('light')
     themeSwitch.innerHTML = '<i class="fa-solid fa-sun"></i>'
 
     effect.setOptions({
@@ -54,5 +53,3 @@ function setTheme() {
   }
 
 };
-
-themeSwitch.addEventListener('click', setTheme)
