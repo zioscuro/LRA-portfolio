@@ -213,6 +213,8 @@ nav .menu-link:hover, nav button:hover {
 
 /* Hobbies section */
 #hobbies {
+  margin: 0 auto;
+  max-width: 900px;
   background-color: var(--secondary-color-light);
 }
 
