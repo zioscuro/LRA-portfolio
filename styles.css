@@ -260,9 +260,9 @@ nav .menu-link:hover, nav button:hover {
 }
 
 .tools-container ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
 }
 
 .tools-container li {
@@ -325,5 +325,9 @@ footer {
 
   .card-work-container {
     grid-template-columns: 1fr;
+  }
+
+  .tools-container ul {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
